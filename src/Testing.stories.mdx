@@ -1,0 +1,28 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction/Testing" />
+
+# Testing 
+Testing is important to maintain quality of any system.
+
+**Some best practice tips to keep in mind:**
+- Articulate supported component states as stories to clarify which combinations of inputs yields a given state. Ruthlessly omit unsupported states to reduce noise.
+- Render components consistently to mitigate variability that can be triggered by randomized (Math.random) or relative (Date.now) inputs.
+
+## Visual Test Appearance
+Visual tests rely on developers to manually look at a component to verify it for correctness. They help us sanity check a component’s appearance as we build. 
+
+ChromaticQA?
+
+## Accessibility Tests
+Disabilities affect 15% of the population according to the World Health Organization. Design systems have an outsized impact on accessibility because they contain the building blocks of user interfaces. 
+
+Some extensions to help find and identify accessibility issues are axe DevTools and WAVE Evaluation Tool.
+
+## Structural Testing
+Structual tests focus on the structure of the UI and how it’s laid out. We want to test whether or not each component has the correct content. Mise-UI currently uses React Testing Library to test our components by querying DOM elements.
+
+Running the Test Suite
+to run all tests: `yarn run test`
+
+to generate code coverage add `--coverage` flag

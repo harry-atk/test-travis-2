@@ -1,0 +1,8 @@
+.storybook
+dist
+node_modules
+src/serviceWorker.js
+src/setupTests.js
+src/**/*.stories.js
+.git
+storybook-static
